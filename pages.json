@@ -1,0 +1,575 @@
+{
+	"entryPagePath": "pages/index/index", //小程序默认启动首页
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages "navigationBarTitleText": "首页"
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "看看TV",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/index/videoIndex", //videoIndex   videoExtension
+			"style": {
+				"navigationBarTitleText": "看看TV",
+				"disableScroll": true,
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "custom"
+			}
+		},
+
+		{
+			"path": "pages/navGoodsList/navGoodsList",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		}
+	],
+	"subPackages": [{
+			"root": "pages/audio",
+			"pages": [{
+				"path": "audio",
+				"style": {
+					"navigationBarTitleText": "读书会",
+					"disableScroll": true
+				}
+			}, {
+				"path": "audioList",
+				"style": {
+					"navigationBarTitleText": "读书会"
+				}
+			}, {
+				"path": "audioLoveList",
+				"style": {
+					"navigationBarTitleText": "我喜欢的"
+				}
+			}]
+		}, {
+			"root": "pages/video",
+			"pages": [{
+				"path": "index",
+				"style": {
+					"navigationBarTextStyle": "white",
+					"navigationStyle": "custom",
+					"disableScroll": true
+				}
+			}, {
+				"path": "videoSerials",
+				"style": {
+					"navigationBarTitleText": "看看TV"
+				}
+			}, {
+				"path": "videoCenter",
+				"style": {
+					"navigationBarTitleText": "个人中心"
+				}
+			}, {
+				"path": "videoGoods",
+				"style": {
+					"navigationBarTitleText": "看看币专购"
+				}
+			}, {
+				"path": "coinRecord",
+				"style": {
+					"navigationBarTitleText": "领取记录"
+				}
+			}, {
+				"path": "videoPoster",
+				"style": {
+					"navigationBarTitleText": "专属优惠"
+				}
+			}, {
+				"path": "detail",
+				"style": {
+					"navigationBarTitleText": "看看TV",
+					"disableScroll": true
+				}
+			}, {
+				"path": "videoWeb",
+				"style": {
+					"navigationBarTitleText": "关注公众号"
+				}
+			}, {
+				"path": "poster",
+				"style": {
+					"navigationBarTitleText": "看看TV"
+				}
+			}, {
+				"path": "detailFull",
+				"style": {
+					"navigationBarTextStyle": "white",
+					"navigationStyle": "custom",
+					"disableScroll": true,
+					"pageOrientation": "landscape"
+				}
+			}, {
+				"path": "videoSearch", //videoIndex   videoExtension
+				"style": {
+					"navigationBarTitleText": "看看TV"
+				}
+			}]
+		},
+		{
+			"root": "pages/music",
+			"pages": [{
+					"path": "music",
+					"style": {
+						"navigationBarTitleText": "音乐风暴",
+						"enablePullDownRefresh": false
+					}
+				}, {
+					"path": "lineaMusic",
+					"style": {
+						"navigationBarTitleText": "音乐风暴",
+						"enablePullDownRefresh": false
+					}
+
+				},
+				{
+					"path": "myAttention/myAttention",
+					"style": {
+						"navigationBarTitleText": "我的关注",
+						"enablePullDownRefresh": false
+					}
+				}
+			]
+		}, {
+			"root": "pages/playLive",
+			"pages": [{
+				"path": "live/recoderLists",
+				"style": {
+					"navigationBarTitleText": "专卖店"
+				}
+			}, {
+				"path": "live/room_list",
+				"style": {
+					"navigationBarTitleText": "直播间"
+				}
+			}, {
+				"path": "live/play",
+				"style": {
+					"navigationBarTextStyle": "white",
+					"navigationBarTitleText": "直播间",
+					"navigationStyle": "custom",
+					"disableScroll": true
+				}
+			}, {
+				"path": "live/playDetail",
+				"style": {
+					"navigationBarTitleText": "直播分享"
+
+				}
+			}, {
+				"path": "live/playBack",
+				"style": {
+					"navigationBarTextStyle": "white",
+					"navigationBarTitleText": "直播回放",
+					"navigationStyle": "custom",
+					"disableScroll": true
+				}
+			}, {
+				"path": "live/recordedPlay",
+				"style": {
+					"navigationBarTextStyle": "white",
+					"navigationBarTitleText": "直播录播",
+					"navigationStyle": "custom",
+					"disableScroll": true
+				}
+			}, {
+				"path": "live/poster",
+				"style": {
+					"navigationBarTitleText": "分享海报"
+
+				}
+			}, {
+				"path": "live/H5Player",
+				"style": {
+					"navigationBarTitleText": "好店直播"
+
+				}
+			}, {
+				"path": "live/recorerH5Play",
+				"style": {
+					"navigationBarTitleText": "好店直播"
+
+				}
+			}, {
+				"path": "live/playNull",
+				"style": {
+					"navigationBarTitleText": "好店直播"
+
+				}
+			}]
+		}, {
+			"root": "pages/pay",
+			"pages": [{
+				"path": "pay",
+				"style": {
+					"navigationBarTitleText": "支付"
+				}
+			}, {
+				"path": "payUrl/payUrl",
+				"style": {}
+			}, {
+				"path": "paySuccess/paySuccess",
+				"style": {
+					"navigationBarTitleText": "支付",
+					"navigationBarBackgroundColor": "#FC2928",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "MpaySuccess/MpaySuccess",
+				"style": {
+					"navigationBarTitleText": "支付",
+					"navigationBarBackgroundColor": "#FC2928",
+					"navigationBarTextStyle": "white"
+				}
+			}, {
+				"path": "shopSuccess/shopSuccess",
+				"style": {}
+			}]
+		}, {
+			"root": "pages/mine",
+			"pages": [{
+					"path": "refund/index/index",
+					"style": {
+						"navigationBarTitleText": "退款售后"
+					}
+				},
+				{
+					"path": "cardCoupon/index",
+					"style": {
+						"navigationBarTitleText": "红包卡券"
+					}
+				},
+				{
+					"path": "inviteActivity/index",
+					"style": {
+						"navigationBarTitleText": "我的邀请"
+					}
+				},
+				{
+					"path": "poster/poster",
+					"style": {
+						"navigationBarTitleText": "分享海报"
+					}
+				},
+				{
+					"path": "inviteActivity/detail",
+					"style": {
+						"navigationBarTitleText": "0元购"
+					}
+				},
+				{
+					"path": "refund/search/search",
+					"style": {
+						"navigationBarTitleText": "退款订单搜索"
+					}
+				}, {
+					"path": "refund/refundSelect/refundSelect",
+					"style": {
+						"navigationBarTitleText": "退款商品选择"
+					}
+				}, {
+					"path": "refund/detail/detail",
+					"style": {
+						"navigationBarTitleText": "退款详情"
+					}
+				},
+				{
+					"path": "refund/editRefund/editRefund",
+					"style": {
+						"navigationBarTitleText": "退款"
+					}
+				},
+				{
+					"path": "refund/refundAddress/refundAddress",
+					"style": {
+						"navigationBarTitleText": "退货地址"
+					}
+				},
+				{
+					"path": "refund/refundLogist/refundLogist",
+					"style": {
+						"navigationBarTitleText": "填写退款物流"
+					}
+				},
+				{
+					"path": "refund/refundLogistDetail/refundLogistDetail",
+					"style": {
+						"navigationBarTitleText": "查看物流"
+					}
+				},
+				{
+					"path": "refund/refundType/refundType",
+					"style": {
+						"navigationBarTitleText": "选择服务类型"
+					}
+				},
+				//refundFeedback
+				{
+					"path": "refund/refundFeedback/refundFeedback",
+					"style": {
+						"navigationBarTitleText": "退款详情"
+					}
+				},
+				{
+					"path": "refund/negotiationHistory/index",
+					"style": {
+						"navigationBarTitleText": "协商历史"
+					}
+				}, {
+					"path": "address/address",
+					"style": {
+						"navigationBarTitleText": "收货地址"
+					}
+				}, {
+					"path": "editAddress/editAddress",
+					"style": {
+						"navigationBarTitleText": "编辑地址"
+					}
+				}, {
+					"path": "order/orderList/orderList",
+					"style": {
+						"navigationBarTitleText": "订单列表",
+						"navigationBarBackgroundColor": "#FC2928",
+						"navigationBarTextStyle": "white"
+					}
+				}, {
+					"path": "order/orderSearch/orderSearch",
+					"style": {
+						"navigationBarTitleText": "订单搜索"
+					}
+				}, {
+					"path": "order/confirmOrder/confirmOrder",
+					"style": {
+						"navigationBarTitleText": "订单确认"
+					}
+				}, {
+					"path": "order/orderEvaluate/orderEvaluate",
+					"style": {
+						"navigationBarTitleText": "订单评价"
+					}
+				}, {
+					"path": "order/orderDetail/orderDetail",
+					"style": {
+						"navigationBarTitleText": "订单详情",
+						"navigationBarBackgroundColor": "#FC2928",
+						"navigationBarTextStyle": "white"
+					}
+				}, {
+					"path": "myCollection/myCollection",
+					"style": {
+						"navigationBarTitleText": "我的收藏"
+					}
+				}, {
+					"path": "userinfo/userinfo",
+					"style": {
+						"navigationBarTitleText": "个人中心"
+					}
+				}, {
+					"path": "userinfo/editUserinfo/editUserinfo",
+					"style": {
+						"navigationBarTitleText": "修改昵称"
+					}
+				}, {
+					"path": "sys/sys",
+					"style": {
+						"navigationBarTitleText": "设置"
+					}
+				}, {
+					"path": "sys/idea/idea",
+					"style": {
+						"navigationBarTitleText": "意见反馈"
+					}
+				}, {
+					"path": "message/message",
+					"style": {
+						"navigationBarTitleText": "消息"
+					}
+				}, {
+					"path": "message/notice/notice",
+					"style": {
+						"navigationBarTitleText": "公告"
+					}
+				}, {
+					"path": "message/fabulous/fabulous",
+					"style": {
+						"navigationBarTitleText": "赞我"
+					}
+				}, {
+					"path": "message/reply/reply",
+					"style": {
+						"navigationBarTitleText": "回复"
+					}
+				}, {
+					"path": "order/logistics/logistics",
+					"style": {
+						"navigationBarTitleText": "物流详情"
+					}
+				}, {
+					"path": "evaluate/evaluate",
+					"style": {
+						"navigationBarTitleText": "评价中心"
+					}
+				}, {
+					"path": "order/packageList/packageList",
+					"style": {
+						"navigationBarTitleText": "订单物流"
+					}
+				}
+			]
+		}, {
+			"root": "pages/login",
+			"pages": [{
+				"path": "index/index",
+				"style": {
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black"
+				}
+			}, {
+				"path": "forgetPassword/forgetPassword",
+				"style": {
+					"navigationBarTitleText": "忘记密码"
+				}
+			}, {
+				"path": "userProtocol/userProtocol",
+				"style": {
+
+				}
+			}]
+		}, {
+			"root": "pages/goods",
+			"pages": [{
+				"path": "goodDetail/goodDetail",
+				"style": {
+					"navigationBarTitleText": "商品详情"
+				}
+			}, {
+				"path": "exchangeDetail/exchangeDetail",
+				"style": {
+					"navigationBarTitleText": "商品详情"
+				}
+			}, {
+				"path": "ActivityDetail/ActivityDetail",
+				"style": {
+					"navigationBarTitleText": "商品详情"
+				}
+			}, {
+				"path": "shopDetail/shopDetail",
+				"style": {
+					"navigationBarTitleText": "店铺信息"
+				}
+			}, {
+				"path": "ActivityRules/index",
+				"style": {
+					"navigationBarTitleText": "活动规则"
+				}
+			}, {
+				"path": "poster/poster",
+				"style": {
+					"navigationBarTitleText": "分享海报"
+				}
+			}, {
+				"path": "poster/poster1",
+				"style": {
+					"navigationBarTitleText": "分享海报"
+				}
+			}]
+		}, {
+			"root": "pages/comments",
+			"pages": [{
+				"path": "comments",
+				"style": {
+					"navigationBarTitleText": "全部评论"
+				}
+			}, {
+				"path": "comment-detail/comment-detail",
+				"style": {
+					"navigationBarTitleText": "评论详情"
+				}
+			}]
+		}, {
+			"root": "pages/fission",
+			"pages": [{
+				"path": "fissionList/index",
+				"style": {
+					"navigationBarTitleText": "超值体验购"
+				}
+			}]
+		}, {
+			"root": "pages/Operation",
+			"pages": [{
+				"path": "index/index",
+				"style": {
+					"navigationBarTitleText": "好店"
+				}
+			}, {
+				"path": "wechat/wechat",
+				"style": {
+					"navigationBarTitleText": "好店"
+				}
+			}, {
+				"path": "distributor/distributor",
+				"style": {
+					"navigationBarTitleText": "好店"
+				}
+			}]
+		}, {
+			"root": "pages/search",
+			"pages": [{
+				"path": "search",
+				"style": {
+					"navigationBarTitleText": "搜索"
+				}
+			}, {
+				"path": "goodShopSeach",
+				"style": {
+					"navigationBarTitleText": "搜索"
+				}
+			}]
+		}
+	],
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+
+		}
+	},
+	"requiredBackgroundModes": ["audio"],
+	"preloadRule": {
+		"pages/index/index": {
+			"network": "all",
+			"packages": ["pages/video", "pages/audio"]
+		},
+		"pages/index/videoIndex": {
+			"network": "all",
+			"packages": ["pages/video", "pages/audio"]
+		},
+
+		"pages/video/detail": {
+			"network": "all",
+			"packages": ["pages/playLive"]
+		}
+
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "看看TV",
+		"navigationBarBackgroundColor": "#ffffff",
+		// #ifdef H5
+		"navigationStyle": "custom",
+		"usingComponents": {
+			"custom": "components/common/custom/custom"
+		},
+		// #endif
+		"mp-weixin": {
+			"usingComponents": {
+				"share-button": "plugin://goodsSharePlugin/share-button"
+			}
+		},
+		"backgroundColor": "#ffffff"
+		
+		
+	}
+}
