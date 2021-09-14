@@ -1,0 +1,159 @@
+{
+    "name" : "读书会",
+    "appid" : "__UNI__861A11E",
+    "description" : "商品，精品，快来逛逛",
+    "versionName" : "1.0.0",
+    "versionCode" : "100",
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {},
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ]
+            },
+            /* ios打包配置 */
+            "ios" : {},
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "ad" : {}
+            }
+        },
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+	/*
+	看看Tv  独角秀Time  appID=wx1cd717c6f579e259
+	妈妈咪   appID=wxae6878145a7995da
+	极限挑战  appID=wx5a307b6ca70f7536
+	新相亲   appID=wx2dc3c6fc7f6fb39f
+	读书会   appID=wxe1f446c980dc7905
+	脱口秀场 appID=wxe1a52e84cc35ca72
+	*/
+    "mp-weixin" : {
+        "appid" : "wxe1f446c980dc7905",
+        "setting" : {
+            "urlCheck" : true,
+            "es6" : true,
+            "postcss" : true,
+            "minified" : true
+        },
+		"plugins" : {
+		    "goodsSharePlugin" : {
+		        "version" : "4.0.1",
+		        "provider" : "wx56c8f077de74b07c"
+		    }
+		},
+		"requiredBackgroundModes": ["audio"],
+        "usingComponents" : true,
+        "permission" : {},
+        "uniStatistics" : {
+            "enable" : false
+        },
+        "optimization" : {
+            "subPackages" : true,
+            "minimize" : true
+        }
+    },
+    "mp-alipay" : {
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-baidu" : {
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : false
+        },
+        "appid" : "ttbc45caf8237fcc47",
+        "setting" : {
+            "es6" : true,
+            "postcss" : true,
+            "minified" : true,
+            "urlCheck" : false
+        }
+    },
+    "h5" : {
+        "title" : "看看TV",
+        "domain" : "http://test.business.m.opentickets.cn",
+        "router" : {
+            "base" : "/",
+            "mode" : "history"
+        },
+        "async" : {
+            //页面js异步加载配置
+            "loading" : "AsyncLoading", //页面js加载时使用的组件（需注册为全局组件）
+            "error" : "AsyncError", //页面js加载失败时使用的组件（需注册为全局组件）
+            "delay" : 200, //展示 loading 加载组件的延时时间（页面 js 若在 delay 时间内加载完成，则不会显示 loading 组件）
+            "timeout" : 10000 //页面js加载超时时间（超时后展示 error 对应的组件）
+        },
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            },
+            "prefetch" : true,
+            "preload" : true
+        },
+        "devServer" : {
+            "https" : false
+        },
+        "template" : "template.h5.html",
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "mp-qq" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    }
+}
